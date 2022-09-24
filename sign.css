@@ -1,3 +1,5 @@
+
+=======
 .container {
   margin-top: 40px;
   max-width: 375px;
@@ -120,3 +122,125 @@ label {
   border-radius: 8px;
   font-size: 16px;
 }
+
+.container {
+  margin-top: 40px;
+  max-width: 375px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.return {
+  display: flex;
+  align-items: center;
+}
+
+.return p {
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.fa-solid  {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+span {
+  content: '';
+  width: 57px;
+  color: transparent;
+}
+
+h1 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+.message {
+  font-size: 10px;
+  text-align: right;
+  margin-bottom: 4px;
+}
+
+.input {
+  display: flex;
+} 
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: none !important;
+  box-shadow: 0 none !important;
+  outline: 0 none !important;
+}
+
+.flow {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont {
+  width: 48px;
+  border: 1px solid #DBDBDB;
+}
+
+.item {
+  line-height: 40px;
+  text-align: center;
+  color: #DBDBDB;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #DBDBDB;
+}
+
+.item_active {
+  color: white;
+  border: 1px solid #DBDBDB;
+  background-color: #598BED;
+}
+
+label {
+  font-size: 16px;
+}
+
+.form-check-label {
+  font-size: 12px !important;
+}
+
+.button {
+  margin-top: 59px;
+  background-color:#598BED;
+  color:white;
+  border: 0px;
+  padding: 13px 141.5px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 16px;

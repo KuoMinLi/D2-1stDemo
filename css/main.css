@@ -1,38 +1,56 @@
 body {
     font-weight: 600 !important;
 }
-.white {
-    color: white;
+.white , a:hover{
+    color: white !important;
 }
 .container {
     padding: 0 20px;
     text-align: justify;
 }
 .header {
-    position: relative;
+    position: fixed;
+    background-color: white;
+    margin-bottom: 52px;
     padding: 10px 20px;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     font-weight: 400;
 }
-.header a {
+.header a:nth-last-child(1) {
     color: black;
     font-weight: bold;
     letter-spacing: -0.5px;
     text-decoration-line: underline;
 }
+.header_word img {
+    height: 32px;
+}
 .header_word p {
+    font-size: 12px;
     letter-spacing: 0.12em;
     color: #4A4A4A;
     font-weight: 400;
 }
+.sign_btn {
+    color: #598BED;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 6px;
+    border: 1px solid #598BED;
+    border-radius: 8px;
+    margin-left: 12px;
+}
 .primary_btn {
     font-weight: bold;
     border: none;
-    padding: 12px;
+    padding: 13px;
     background-color: #598BED;
     box-shadow: 0px 0px 10px 2px rgba(157, 157, 157, 0.25);
     border-radius: 8px;
     margin-top: 45px;
+}
+.primary_btn:active {
+    background-color: #3A71DC;
 }
 
 .modal-content {
@@ -66,9 +84,20 @@ body {
     top: 6px;
 }
 
-.success_container {
+.sent_container {
     padding: 47% 54px;
 }
-.success_container h5 {
+.sent_container h5 {
     padding: 50px 0;
+}
+.white_btn {
+    color: #598BED;
+    padding: 12px;
+    border: 1px solid #598BED;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(157, 157, 157, 0.25);
+    border-radius: 8px;
+}
+.white_btn:hover {
+    color: #598BED;
 }
