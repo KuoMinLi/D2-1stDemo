@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
-    <title></title>
+    <title>join</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2b8e1a3406.js" crossorigin="anonymous"></script>
@@ -26,42 +26,58 @@
         rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="/css/main.css">
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>$(function () { AOS.init(); });</script>
-
 </head>
 
 <body>
-  <h1></h1>
-  <h4></h4>
-  <div class="w-100">
-    <img src="/img/banner.jpg">
+  <div class="header d-flex align-items-center justify-content-between w-100">
+    <img src="/img/menu.png">
+    <div class="header_word d-flex align-items-center">
+      <img src="/img/wtm-logo_96.png">
+      <p class="m-0" style="padding-left:12px;">Women Technmakers</p>
+    </div>
+    <a href="#">登入</a>
   </div>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button>
+  <img class="w-100" style="margin-bottom: 24px;" src="/img/banner.jpg">
+  <div class="container">
+    <p>主要是因為在開發過程中設計師想要給使用者一個良好的操作體驗，但往往有時候被會被現實或時間考量，不得不改變設計與原本的作法，因此與開發者們產生衝突。希望透過此工作坊讓參與者們相互學習與交流，讓我們透過溝通來一同解決問題。</p>
+    <p>行前需知 :</br>
+      工作坊當天會現場組隊與出題目給參加者實作。</br></br>
+      活動資訊：</br>
+      日期：09.24.2022 (六)</br>
+      報到時間：9:20 am</br>
+      活動時間：09:40 am - 5:30 pm</p>
+    <button class="primary_btn white w-100 btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">參加活動</button>
+  </div>
 
-  <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog" id="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close white rounded-circle" id="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <img class="btn_close" src="/img/btn-close.png">
+          </button>
         </div>
         <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <p class="text-center">想要參加活動，請先註冊成為 Women Techmakers 會員</p>
+          <a href="/sign.html" class="primary_btn w-100 d-flex align-items-center justify-content-center" style="text-decoration: none !important; margin-top: 28px;">
+            <img src="/img/icon_mail.png">
+            <p class="mb-0 white ps-2">使用信箱註冊</p>
+          </a>
+          <a href="/success.html" class="primary_btn w-100 d-flex align-items-center justify-content-center" style="text-decoration: none !important; margin-top: 28px;">
+            <img src="/img/icon_google.png">
+            <p class="mb-0 white ps-2">Google 帳號註冊</p>
+          </a>
         </div>
       </div>
     </div>
   </div>
+  <script>
+    $(document).ready(function() {
+      $('#btn-close').click(function() {
+          $('#modal-dialog').css('margin','20px')
+      });
+  });
+  </script>
 </body>
 
 </html>
