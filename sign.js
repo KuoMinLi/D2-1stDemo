@@ -49,6 +49,7 @@ btn.addEventListener("click", function () {
     }
 
   console.log("送出");
+  window.location.replace("index.html");
   // email_check(formcheck);
   // password_check(formcheck);
   // namecheck(formcheck);
